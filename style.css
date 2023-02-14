@@ -22,16 +22,20 @@ body{
 .header-container{
     display: flex;
     
-    margin:30px 150px;
+    
     justify-content: center;
 }
 .header-nav-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
-  
+    position: fixed;
     max-width: 1920px;
-  
+    background-color: #101010;
+    padding:30px 150px;
+    z-index: 999;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 
 }
 
@@ -132,7 +136,7 @@ body{
 .first-container{
     display: flex;
     justify-content: space-between;
-    margin:0 150px;
+    margin:120px 150px;
     max-width: 1920px;
 
 }
@@ -346,7 +350,9 @@ body{
 	display: flex;
 	justify-content:center;
 	align-items: center;
+    column-gap: 10px;
 }
+
 
 @media (max-width:767px){
 	.wrapper{padding: 50px 10px;}
@@ -620,7 +626,7 @@ label {
    
     border-radius: 26px;
     overflow: hidden;
-    position: relative;
+    
     transition: all 0.3s ease;
     /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
     display: block;
@@ -1159,14 +1165,14 @@ margin: 120px 0 72px 0;
 
    /*SIXTH*/
 .sixht-container-adp{
-   
+    
     height: 530px;
     display: flex;
     justify-content: center;
 }
 
 .sixth-container{
-    width: 1920px;
+    width: 100%
 }
 
 .sixth-block{
@@ -1178,6 +1184,7 @@ margin: 120px 0 72px 0;
     height: 290px;
     align-items: center;
     padding: 0 50px;
+
     justify-content: space-between;
 }
 
@@ -1255,6 +1262,7 @@ margin: 120px 0 72px 0;
    .six-container-btn{
     display: flex;
     column-gap: 80px;
+    
    }
 
 
@@ -1462,4 +1470,173 @@ margin: 120px 0 72px 0;
     color: #ffffff;
     z-index: 999;
     border-radius: 10px;
+   }
+
+
+   /*ADP*/
+
+   .btn-adp{
+    display: none;
+    cursor: pointer;
+   }
+   .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #FFF ;
+   }
+
+   li{
+    list-style: none;
+   }
+   .nav-link{
+    text-decoration: none;
+    color: #FFF;
+    transition: .7s ease;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    
+   }
+
+   .nav-memu-adp{
+    display: none;
+    position: fixed;
+    background-color: #1d1e22;
+    padding: 200px 50px 0 50px;
+    right: 0;
+    top: 0;
+   margin-top: 116px;
+    
+    height: 100%;
+   }
+   
+   .nav-item{
+    margin-bottom: 25px;
+   }
+   #last{
+    margin-bottom: 100px;
+   }
+   .header-btn-adp{
+    display: none;
+   }
+  
+   
+
+
+
+
+
+
+   .header-btn-adp-up {
+    align-items: center;
+    background-image: linear-gradient(144deg,#40a0ff, #2ff5eb 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: none;
+    font-family: Phantomsans, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 250px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+   }
+   
+   .header-btn-adp-up:active,
+   .header-btn-adp-up:hover {
+    outline: 0;
+   }
+   
+   .header-btn-adp-up span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   .header-btn-adp-up:hover span {
+    background: none;
+   }
+   
+   .header-btn-adp-up:active {
+    transform: scale(0.9);
+   }
+   .header-btn-adp{
+    display: flex;
+    justify-content: center;
+   }
+
+   #group-adp{
+    display: none;
+   }
+   .group-adp-for-img{
+    display: none;
+   }
+   .footer-up-name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 16px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+   }
+
+   .footer-down-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    
+    
+    text-align: center;
+    
+    color: #E0E5F3;
+   }
+
+   .footer-info-adp{
+    margin: 40px 0 0 0;
+   }
+   #footer-down-name-link{
+    margin: 0 0 30px 0;
+   }
+
+   .footer-info{
+    margin: 40px 0 15px 0;
+   }
+
+   .footer-adp-container{
+    display: none;
+   }
+
+   .footer-line-text-adp{
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    color: #E0E5F3;
    }
