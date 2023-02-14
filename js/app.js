@@ -11,17 +11,24 @@ $(document).ready(function(){
 		autoplaySpeed:800,
 		responsive:[
 			{
-				breakpoint: 768,
+				breakpoint: 1050,
+				settings: {
+					slidesToShow:3
+				}
+			},
+			{
+				breakpoint: 700,
 				settings: {
 					slidesToShow:2
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 460,
 				settings: {
 					slidesToShow:1
 				}
 			}
+			
 		]
 	});
 });
@@ -37,13 +44,13 @@ $(document).ready(function(){
 		autoplaySpeed:800,
 		responsive:[
 			{
-				breakpoint: 768,
+				breakpoint: 1050,
 				settings: {
 					slidesToShow:2
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 700,
 				settings: {
 					slidesToShow:1
 				}
@@ -79,5 +86,15 @@ function callback(evt) {
   }
   
   document.getElementById('sort').addEventListener('click', callback);
+
+/*Menu*/ 
+const hamburger = document.querySelector('.btn-adp');
+const navMenu = document.querySelector('.nav-memu-adp');
+
+hamburger.addEventListener('click',()=>{
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
+})
+
 
 
