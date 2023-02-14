@@ -219,9 +219,7 @@
         padding-left: 126px;
     }
 
-    .fourth-container-adp{
-        height: 950px;
-    }
+    
     .sixth-block{
         display: block;
         background-color: #101010;
@@ -287,5 +285,8 @@
 	
         
         margin-right: 0;
+    }
+    .fourth-container-adp{
+        height: 700px;
     }
 }
