@@ -97,4 +97,37 @@ hamburger.addEventListener('click',()=>{
 })
 
 
+/*AOS */
 
+
+
+
+AOS.init({
+	once:true
+});
+
+
+/*SEE ALL*/ 
+
+
+
+
+
+
+
+const seeAll = document.querySelector('.thirth-btn');
+const wrapperHiden = document.querySelector('.list');
+
+
+seeAll.addEventListener("click",function(){
+
+
+ if (wrapperHiden.classList.toggle('add')){
+    seeAll.textContent = "See All Collection";
+ } else{
+    seeAll.textContent= "Close";
+ }
+
+
+
+})
