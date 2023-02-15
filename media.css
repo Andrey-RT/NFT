@@ -75,6 +75,11 @@
     #wrapper{
         justify-content: center;
         column-gap: 10px;
+        
+    }
+    
+    .list{
+        
     }
     .six-container-btn{
         display: block;
@@ -214,11 +219,14 @@
 @media(max-width:700px){
     .appartments-item{
         display: block;
+        
     }
     .person-info{
         padding-left: 126px;
     }
-
+    #wrapper{
+        margin: 0 50px;
+    }
     
     .sixth-block{
         display: block;
