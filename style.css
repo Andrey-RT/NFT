@@ -27,6 +27,7 @@ body{
 }
 .header-nav-container{
     width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -1639,4 +1640,9 @@ margin: 120px 0 72px 0;
     text-align: center;
     
     color: #E0E5F3;
+   }
+
+   .add{
+    height: 600px;
+    overflow: hidden;
    }
